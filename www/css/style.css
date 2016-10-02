@@ -210,3 +210,23 @@ h5.title a:hover {text-decoration: underline;}
 	padding: 120px 0;
 	background: #F7F7F7;
 }
+
+.about_us {
+	height: 700px;
+	border: 1px solid black;
+}
+
+.our_blog {
+	height: 700px;
+	border: 1px solid black;
+}
+
+.our_projects {
+	height: 700px;
+	border: 1px solid black;
+}
+
+.footer {
+	height: 300px;
+	border: 1px solid black;
+}
