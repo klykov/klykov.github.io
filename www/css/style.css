@@ -105,7 +105,9 @@ a, a:hover {text-decoration: none;}
 #header.default .nav a {color: #222;}
 
 .nav a:hover,
-#header.default .nav a:hover {color: #00CD00;}
+#header.default .nav a:hover {
+	color: #00CD00;
+}
 
 /* Секция HOME */
 #home {
@@ -212,10 +214,35 @@ h5.title a:hover {text-decoration: underline;}
 }
 
 .about_us {
-	height: 700px;
-	border: 1px solid black;
+	height: 640px;
+	/*border: 1px solid black;*/
 }
 
+
+.about_us h3 {
+	margin-top: 60px;
+	text-align: center;
+	text-transform: capitalize;
+	font: 40px/46px Arial, sans-serif;
+}
+.about_us_content {
+	margin-left: 100px;
+	margin-top: 90px;
+}
+
+.owl-carousel  {
+	margin-top: 30px;
+}
+.owl-carousel .item img{
+    display: block;
+    height: auto;
+    margin-left: 90px;
+}
+
+p.text {
+	max-width:500px;
+	font-size: 20px;
+}
 .our_blog {
 	height: 700px;
 	border: 1px solid black;
@@ -230,3 +257,5 @@ h5.title a:hover {text-decoration: underline;}
 	height: 300px;
 	border: 1px solid black;
 }
+
+
