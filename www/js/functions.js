@@ -20,3 +20,17 @@ $(document).ready(function(){
 				};
 			});
 		});
+
+
+//example
+$(document).ready(function(){
+ 
+  // hide our element on page load
+
+ $('#element-to-animate').css('opacity', 0);
+
+  $('#element-to-animate').waypoint(function() {
+      $('#element-to-animate').addClass('fadeInLeft');
+  }, { offset: '100%' });
+ 
+});

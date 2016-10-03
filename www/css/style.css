@@ -152,6 +152,30 @@ a, a:hover {text-decoration: none;}
 		 -o-border-radius: 3px;
 	        border-radius: 3px;
 }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
 /* Сервис */
 
@@ -215,6 +239,7 @@ h5.title a:hover {text-decoration: underline;}
 
 .about_us {
 	height: 640px;
+	background: #EEE9E9;
 	/*border: 1px solid black;*/
 }
 
@@ -230,12 +255,17 @@ h5.title a:hover {text-decoration: underline;}
 	margin-top: 90px;
 }
 
+.about_us_ful {
+	padding-top: 100px;
+}
+
 .owl-carousel  {
 	margin-top: 30px;
 }
 .owl-carousel .item img{
     display: block;
     height: auto;
+    width: auto;
     margin-left: 90px;
 }
 
@@ -245,7 +275,47 @@ p.text {
 }
 .our_blog {
 	height: 700px;
-	border: 1px solid black;
+}
+.blog_header img {
+	width: 360px;
+	height: 208px;
+	align-content: left;
+}
+
+.our_blog h3 {
+	text-align: center;
+	font-size: 42px;
+}
+
+.our_blog{
+	padding-top: 30px; 
+}
+
+.blog-section-grids{
+	padding-top: 30px;
+}
+.blog_header{
+	text-align: center;
+}
+.blog_footer a{
+color: #00CD00;
+}
+.blog_content_one {
+	width: 360px;
+	margin-left: 30px;
+}
+.date {
+	float: right;
+
+}
+.our_blog .button {
+	align-items: center;
+
+}
+
+.button_blog{
+	text-align: center;
+	padding-top: 10px;
 }
 
 .our_projects {
