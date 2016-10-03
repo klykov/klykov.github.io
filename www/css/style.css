@@ -317,15 +317,66 @@ color: #00CD00;
 	text-align: center;
 	padding-top: 10px;
 }
-
 .our_projects {
-	height: 700px;
-	border: 1px solid black;
+	height: 1000px;
+	background: #EEE9E9;
+}
+
+.our_projects h3 {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	font-size: 42px;
+}
+
+.about_img {
+	text-align: center;
+	margin-bottom: 90px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #4CAF50;
+	position: relative;
+}
+.about_img p.left {
+	left:0;
+	position: absolute;
+	bottom:0;
+	width: 300px;
+}
+.about_img p.right {
+	position: absolute;
+	bottom:0;
+	right: 0;
+	width: 300px;
 }
 
 .footer {
-	height: 300px;
-	border: 1px solid black;
+	height: 350px;
 }
+.last_info{
+	padding-top: 30px;
+	text-align: center;
+	opacity: 0.5;
+}
+.form_send{
+	margin-left: 100px;
+}
+.form_send input[type="text"] {
+	margin-bottom: 10px;
+	width: 250px;
+	border-radius: 0;
 
-
+}
+.form_send input[type="text"]:focus {
+border: 1px solid #4CAF50;
+}
+.form_send textarea {
+	width: 400px;
+	border-radius: 0;
+}
+.form_send textarea:focus {
+	border: 1px solid #4CAF50; 
+}
+.contacts{
+	text-align: right;
+	margin-right:100px; 
+}
