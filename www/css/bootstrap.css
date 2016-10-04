@@ -3983,18 +3983,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   list-style: none;
 }
 .nav > li {
-  position: relative;
-  display: block;
+  position: relative;*/
+  display: block;*/
 }
 .nav > li > a {
   position: relative;
-  display: block;
+  display: block;*/
   padding: 10px 15px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  /*background-color: #eeeeee;*/
 }
 .nav > li.disabled > a {
   color: #999999;
