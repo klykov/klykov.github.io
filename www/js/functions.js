@@ -22,15 +22,21 @@ $(document).ready(function(){
 		});
 
 
-//example
+
+
 $(document).ready(function(){
  
-  // hide our element on page load
-
- $('#element-to-animate').css('opacity', 0);
-
-  $('#element-to-animate').waypoint(function() {
-      $('#element-to-animate').addClass('fadeInLeft');
-  }, { offset: '100%' });
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
  
 });

@@ -111,7 +111,7 @@ a, a:hover {text-decoration: none;}
 
 /* Секция HOME */
 #home {
-	height: 700px;
+	height: 750px;
 	background: #000 url(../img/top_img.png) no-repeat center;
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
@@ -238,7 +238,8 @@ h5.title a:hover {text-decoration: underline;}
 }
 
 .about_us {
-	height: 640px;
+	min-height: 640px;
+	height: auto;
 	background: #EEE9E9;
 	/*border: 1px solid black;*/
 }
@@ -259,14 +260,8 @@ h5.title a:hover {text-decoration: underline;}
 	padding-top: 100px;
 }
 
-.owl-carousel  {
-	margin-top: 30px;
-}
-.owl-carousel .item img{
-    display: block;
-    height: auto;
-    width: auto;
-    margin-left: 90px;
+.slider {
+	text-align: center;
 }
 
 p.text {
@@ -274,7 +269,9 @@ p.text {
 	font-size: 20px;
 }
 .our_blog {
-	height: 700px;
+	min-height: 700px;
+	height: auto;
+	padding-top: 30px;
 }
 .blog_header img {
 	width: 360px;
@@ -287,22 +284,16 @@ p.text {
 	font-size: 42px;
 }
 
-.our_blog{
-	padding-top: 30px; 
-}
-
-.blog-section-grids{
-	padding-top: 30px;
-}
 .blog_header{
 	text-align: center;
+	margin: auto;
+	width:360px;
 }
 .blog_footer a{
 color: #00CD00;
 }
 .blog_content_one {
-	width: 360px;
-	margin-left: 30px;
+	text-align: left;
 }
 .date {
 	float: right;
@@ -318,7 +309,9 @@ color: #00CD00;
 	padding-top: 10px;
 }
 .our_projects {
-	height: 1000px;
+	border-top: 1px solid lightgray;
+	min-height: 1000px;
+	height: auto;
 	background: #EEE9E9;
 }
 
@@ -341,21 +334,26 @@ color: #00CD00;
 	position: absolute;
 	bottom:0;
 	width: 300px;
+	text-align: left;
 }
 .about_img p.right {
 	position: absolute;
 	bottom:0;
 	right: 0;
 	width: 300px;
+	text-align: right;
 }
 
 .footer {
-	height: 350px;
+	border-top: 1px solid lightgray;
+	min-height: 300px;
+
 }
 .last_info{
-	padding-top: 30px;
+	padding-top: 10px;
+	border-top: 1px solid  lightgray;
 	text-align: center;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 .form_send{
 	margin-left: 100px;
@@ -379,4 +377,28 @@ border: 1px solid #4CAF50;
 .contacts{
 	text-align: right;
 	margin-right:100px; 
+}
+.navigation {
+	margin: auto;
+	text-align: left;
+}
+
+.navigation li{
+	padding: 5px;
+	font-size: 12px;
+}
+.scrollup{
+width:64px;
+height:64px;
+opacity:0.6;
+position:fixed;
+bottom:50px;
+right:100px;
+display:none;
+text-indent:-9999px;
+background: url(../img/up-arrow.png) no-repeat;
+}
+
+.navigation a {
+	color: #4CAF50;
 }

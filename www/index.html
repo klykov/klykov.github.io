@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/animations.css" />
+	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 	<!-- Basic stylesheet -->
 	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
@@ -16,12 +16,16 @@
 	<!--  Библеотека jquery -->
 	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
 	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
 	<!-- Include js plugin -->
 	<script src="js/owl-carousel/owl.carousel.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="js/css3-animate-it.js"></script>
 </head>
-
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 <body>
 
 	<div id="wrapper">
@@ -45,7 +49,7 @@
 		</div>
 		<div class="about_us">
 			<div class="about_us_ful">
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<div class="about_us_content">
 					<h2>Немного о нас..</h2>
 					<p class="text">
@@ -53,11 +57,13 @@
 					</p>
 				</div>
 				</div>
-				<div class="col-md-7">
-					<div class="owl-carousel">
-  					<div class="item"><img src="img/1.jpg"></div>
-  					<div class="item"><img src="img/2.jpg"></div>
-  					<div class="item"><img src="img/3.jpg"></div>
+				<div class="col-md-6">
+					<div class="slider">
+						<div class="owl-carousel">
+	  					<div class="item"><img src="img/1.jpg"></div>
+	  					<div class="item"><img src="img/2.jpg"></div>
+	  					<div class="item"><img src="img/3.jpg"></div>
+						</div>
 					</div>
 				</div>
 		</div>
@@ -66,12 +72,10 @@
 				<div class="col-md-12">
 					<h3>Наш блог</h3>
 				</div>
-			<div class="blog-section-grids">
-			<div class="col-md-4 blog-section-grids">
+			<div class="col-md-4">
 					<div class="blog_header">
 					<img src="img/1.jpg">
 					<h2>Статья 0</h2>
-					</div>
 					<div class="blog_content_one">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -80,16 +84,16 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<div class="blog_footer">
-						<a href="#">Read more...</a>
+					<a href="#">Read more...</a>
 						<span class="date">12.05.17</span>
-						</div>
+					</div>
 					</div>
 			</div>
-			<div class="col-md-4 blog-section-grids">
+			</div>
+			<div class="col-md-4">
 					<div class="blog_header">
 					<img src="img/2.jpg">
 					<h2>Статья 1</h2>
-					</div>
 					<div class="blog_content_one">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -103,11 +107,11 @@
 						</div>
 					</div>
 			</div>
-			<div class="col-md-4 blog-section-grids">
+			</div>
+			<div class="col-md-4">
 					<div class="blog_header">
 					<img src="img/3.jpg">
 					<h2>Статья2</h2>
-					</div>
 					<div class="blog_content_one">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -116,12 +120,12 @@
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<div class="blog_footer">
-						<a href="#">Read more...</a>
+					<a href="#">Read more...</a>
 						<span class="date">31.09.12</span>
+						</div>
 						</div>
 					</div>
 					</div>
-				</div>
 				<div class="col-md-12 button_blog">
 				<button  class="button button1">
 				ЧИТАТЬ БЛОГ</button>
@@ -135,36 +139,39 @@
 				</div>
 				<div class="col-md-12">
 					<div class="about_img">
-					<p class="left">Сняли более 200 музыкальных клипов.Сняли более 200 музыкальных клипов.Сняли более 200 музыкальных клипов.</p>
-						<img src="img/microphone.png">
+					<p class="left wow zoomIn">Сняли более 200 музыкальных клипов.Сняли более 200 музыкальных клипов.Сняли более 200 музыкальных клипов.</p>
+						<img class="wow rubberBand" src="img/microphone.png">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="about_img ">
+						<p class="right wow zoomIn">Записали более 300 альбомов для разных исполнителей и музыкантов. Записали более 300 альбомов для разных исполнителей и музыкантов.</p>
+						<img class="wow rubberBand" src="img/guitar.png">
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="about_img">
-						<p class="right">Записали более 300 альбомов для разных исполнителей и музыкантов. Записали более 300 альбомов для разных исполнителей и музыкантов.</p>
-						<img src="img/guitar.png">
+						<p class="left wow zoomIn">Создали более 50 различных видеороликов.Создали более 50 различных видеороликов.</p>
+						<img class="wow rubberBand" src="img/film-strip.png">
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="about_img">
-						<p class="left">Создали более 50 различных видеороликов.Создали более 50 различных видеороликов.</p>
-						<img src="img/film-strip.png">
+					
+						<p class="right wow zoomIn">
+						Сняли 10 документальных фильмов.Сняли 10 документальных фильмов.Сняли 10 документальных фильмов.
+						</p>
+						
+						<img class="wow rubberBand" src="img/camera.png">
 					</div>
 				</div>
-				<div class="col-md-12">
-					<div class="about_img">
-						<p class="right">Сняли 10 документальных фильмов.Сняли 10 документальных фильмов.Сняли 10 документальных фильмов.</p>
-						<img src="img/camera.png">
-					</div>
-				</div>
-				
 			</div>
 		</div>
 
 	<div class="footer">
 		<div class="form_send">
-			<div class="col-md-6">
-			<h3>Напишите нам</h3>
+			<div class="col-md-4">
+			<h4>Напишите нам</h4>
 			<form action="" method="post">
   <input type="text" class="form-control" id="usr">
   <input type="text" class="form-control" id="pwd">
@@ -173,9 +180,21 @@
 				value="Отправить" class="button button1">
 			</form>
 			</div>
-			<div class="col-md-6">	
+			<div class="col-md-4">
+			<div class="navigation">
+			<h4>Навигация</h4>
+				<ul>
+					<li><a href="#">Творческая деятельность</a></li>
+					<li><a href=#>О нас</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</u>
+			</div>
+			</div>
+			<div class="col-md-4">	
 				<div class="contacts">
-					<h3>Контакты</h3>
+					<h4>Контакты</h4>
 					<p>+7(911)4231612</p>
 					<p>г. Петрозаводск, проспект А.Невского, д.62
 					</p>
@@ -188,7 +207,8 @@
 					<p>(с)MS-Region.ru - видеостудия без границ!</p>
 				</div>
 			</div>
-	</div>
-</div>
 
+</div>
+</div>
+<a href="#" class="scrollup">Наверх</a>
 </body>
