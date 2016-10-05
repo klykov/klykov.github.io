@@ -61,34 +61,33 @@ a, a:hover {text-decoration: none;}
 
 #header {
 	/*position: absolute;*/
-	top: 20px;
+	top: 0px;
 	left: 0;
 	right: 0;
 	z-index: 9999;
 	width: 100%;
 	padding: 20px 0;
-}
-#header.defaultt {
-	top: 0;
-	/*position: fixed;*/
 	background: #fefefe;
-	-webkit-box-shadow: 0 2px 2px #444;
+	position: fixed;
+	border-bottom: 1px solid lightgray;	
+	/*-webkit-box-shadow: 0 2px 2px #444;
 	   -moz-box-shadow: 0 2px 2px #444;
 		-ms-box-shadow: 0 2px 2px #444;
 		 -o-box-shadow: 0 2px 2px #444;
-			box-shadow: 0 2px 2px #444;
+			box-shadow: 0 2px 2px #444;*/
 }
 
 /* Лого */
 .logo {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	margin-right: 10px;
 }
 
 /* Меню в шапке */
 .nav {
 	float: right;
-	padding-top: 5px;
+	padding-top: 20px;
 }
 .nav li {
 	float: left;
@@ -100,10 +99,10 @@ a, a:hover {text-decoration: none;}
 	font: 14px Arial, sans-serif;
 	color: #fff;
 }
-#header.defaultt .nav a {color: #222;}
+#header .nav a {color: #222;}
 
 .nav a:hover,
-#header.defaultt .nav a:hover {
+#header .nav a:hover {
 	background-color: none;
 	color: #4CAF50;
 }
@@ -235,11 +234,24 @@ h5.title a:hover {text-decoration: underline;}
 	padding: 120px 0;
 	background: #F7F7F7;
 }
-
+.blog_theme {
+	opacity: 0.4;
+	height: 80px;
+	margin-top: 81px;
+	background: lightgray;
+	text-align: center;
+}
 
 .blog_content {
 	min-height: 640px;
 	height: auto;
+	margin-top: 80px;
+}
+.blog_theme li {
+	font-size: 16px;
+	padding: 30px;
+	display: inline-block;
+	text-align: center;
 }
 
 .about_us {

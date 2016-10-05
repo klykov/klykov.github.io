@@ -74,11 +74,14 @@ a, a:hover {text-decoration: none;}
 	transition-duration: 0.3s;
 	position: fixed;
 	background: #fefefe;
+	border-bottom: 1px solid lightgray;
+	/*
 	-webkit-box-shadow: 0 2px 2px #444;
 	   -moz-box-shadow: 0 2px 2px #444;
 		-ms-box-shadow: 0 2px 2px #444;
 		 -o-box-shadow: 0 2px 2px #444;
 			box-shadow: 0 2px 2px #444;
+*/
 }
 
 /* Лого */
@@ -90,7 +93,7 @@ a, a:hover {text-decoration: none;}
 /* Меню в шапке */
 .nav {
 	float: right;
-	padding-top: 5px;
+	padding-top: 20px;
 }
 .nav li {
 	float: left;
