@@ -242,7 +242,8 @@ h5.title a:hover {text-decoration: underline;}
 	min-height: 640px;
 	height: auto;
 	background: #EEE9E9;
-	/*border: 1px solid black;*/
+	border-top:1px solid lightgray;
+	border-bottom:1px solid lightgray;
 }
 
 
