@@ -235,7 +235,7 @@ h5.title a:hover {text-decoration: underline;}
 	background: #F7F7F7;
 }
 .blog_theme {
-	opacity: 0.4;
+	opacity: 0.6;
 	height: 80px;
 	margin-top: 81px;
 	background: lightgray;
@@ -254,6 +254,13 @@ h5.title a:hover {text-decoration: underline;}
 	text-align: center;
 }
 
+.blog_theme a {
+	color: #4CAF50;
+}
+.blog_theme a:hover {
+	color: #4CAF50;
+	text-decoration: none;
+}
 .about_us {
 	height: 600px;
 }
