@@ -262,7 +262,14 @@ h5.title a:hover {text-decoration: underline;}
 	text-decoration: none;
 }
 .about_us {
-	height: 600px;
+	height: 650px;
+	padding-top: 100px;
+}
+.info p {
+	font-weight: normal;
+}
+.info span {
+	font-weight: bold;
 }
 
 .blog_content h3 {
