@@ -15,8 +15,10 @@ $(document).ready(function(){
 			$(window).scroll(function(){
 				if ($(this).scrollTop() > 20) {
 					$("#header").addClass("default").fadeIn('fast');
+					$(".logo").addClass("black_logo").fadeIn('fast');
 				} else {
 					$("#header").removeClass("default").fadeIn('fast');
+					$(".logo").removeClass("black_logo").fadeIn('fast');
 				};
 			});
 		});
