@@ -265,13 +265,40 @@ h5.title a:hover {text-decoration: underline;}
 .about_us {
 	min-height: 650px;
 	height: auto;
-	padding-top: 100px; 
+	padding-top: 100px;
 }
 
 .contacts_map{
 	text-align: center;
 }
 
+.our_project{
+	background: #EEE9E9; 
+	min-height: 650px;
+	height: auto;
+	padding-top: 200px;
+}
+.our_project p{
+	padding-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.our_project a{
+	color: #000; 
+}
+.our_project a:hover{
+	color: #4CAF50;
+	text-decoration: none; 
+}
+.about_us .grid{
+	height: 350px;
+	/*border: 1px solid black;*/
+	text-align: center;
+}
+
+.grid img {
+	width: 300px;
+}
 
 .info p {
 	font-weight: normal;
@@ -316,6 +343,10 @@ h5.title a:hover {text-decoration: underline;}
 	font-size:28px;
 	color: #4CAF50;
 
+}
+
+.img_project {
+	text-align: center;
 }
 
 .about_us_content {
