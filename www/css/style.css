@@ -378,7 +378,7 @@ color: #4CAF50;
 border: 1px solid #4CAF50;
 }
 .form_send textarea {
-	width: 400px;
+	width: 300px;
 	border-radius: 0;
 }
 .form_send textarea:focus {

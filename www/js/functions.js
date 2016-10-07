@@ -1,7 +1,7 @@
 //slider
 $(document).ready(function() {
   	  $(".owl-carousel").owlCarousel({
-   	  autoPlay: 5000,
+   	  // autoPlay: 5000,
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true

@@ -290,10 +290,15 @@ h5.title a:hover {text-decoration: underline;}
 	color: #4CAF50;
 	text-decoration: none; 
 }
-.about_us .grid{
+.grid{
 	height: 350px;
-	/*border: 1px solid black;*/
+	/*border-bottom: 1px solid black;*/
 	text-align: center;
+
+}
+.grid:hover{
+	opacity: 0.7;
+	cursor: pointer;
 }
 
 .grid img {
@@ -337,6 +342,23 @@ h5.title a:hover {text-decoration: underline;}
 	height: 233px;
 	float: left;
 	padding-right: 20px;
+}
+
+
+.prev{
+	color: #4CAF50;
+	font-size: 18px;
+	display: inline-block;
+	background: url(../img/left-arrow.png) no-repeat;
+	padding-left: 25px;
+}
+.prev:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.previ {
+	text-align: center;
+	padding-bottom: 30px;
 }
 
 .article_content h4{
@@ -428,7 +450,7 @@ color: #4CAF50;
 border: 1px solid #4CAF50;
 }
 .form_send textarea {
-	width: 400px;
+	width: 300px;
 	border-radius: 0;
 }
 .form_send textarea:focus {
