@@ -1,10 +1,12 @@
 //slider
 $(document).ready(function() {
   	  $(".owl-carousel").owlCarousel({
-   	  // autoPlay: 5000,
+  	  autoPlay: 3000,
       slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true
+      paginationSpeed : 900,
+      singleItem:true,
+      nav: false,
+      stopOnHover: true,
   });
 });
 //fixed header
@@ -25,7 +27,6 @@ $(document).ready(function(){
 
 
 
-
 $(document).ready(function(){
  
 $(window).scroll(function(){
@@ -41,4 +42,31 @@ $("html, body").animate({ scrollTop: 0 }, 600);
 return false;
 });
  
+});
+
+$(document).ready(function() {
+ 
+  $(".owl-carousel-partners").owlCarousel({
+ 
+      autoPlay: 2000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+  });
+ 
+});
+
+
+$(document).ready(function () {
+    $("a").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        if ($.browser.safari) {
+            $('body').animate({ scrollTop: destination - 80 }, 800); //1100 - скорость прокрутки
+        } else {
+            $('html').animate({ scrollTop: destination - 80}, 800);
+        }
+        return false; 
+    });
 });

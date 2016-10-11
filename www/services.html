@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
 	<!--  Библеотека jquery -->
 	<script type="text/javascript" src="js/jquery.1.7.1.min.js"></script>
-
+	<script type="text/javascript" src="js/functions.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
 	<!-- Include js plugin -->
 	<script src="js/owl-carousel/owl.carousel.js"></script>
@@ -32,32 +32,53 @@
 			<div class="container">
 				<a href="index.html"><div class="logo"></div></a>
 				<ul class="nav">
-					<li><a style="color:#4CAF50;" href="creative.html">Наши проекты</a></li>
+					<li><a href="creative.html">Наши проекты</a></li>
 					<li><a  href="about.html">О нас</a></li>
 					<li><a href="blog.html">Блог</a></li>
-					<li><a href="services.html">Услуги</a></li>
+					<li><a style="color:#4CAF50;" href="contacts.html">Услуги</a></li>
 					<li><a href="shop.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 			</div>
 		</div>
 
-	<div class="about_us">
+	<div class="our_project">
 		<div class="container">
-			<div class="col-md-4 grid">
-				<img src="img/art_img.png">
-				<h2>ArtStudio&WV</h2>
-			</div>
+		<div class="col-md-4 img_project">
+		<a href="#cel_video"><img src="img/cake.png">
+		<p>Видеопоздравления</p></a>
 		</div>
-		<div class="col-md-12 previ">
-			<a href="creative.html">
-			<div class="prev">
-				<p>Назад</p>
-			</div>
-			</a>
-			</div>
+		<div class="col-md-4 img_project">
+			<a href="#kor_video"><img src="img/board.png">
+			<p>Корпоративные фильмы</p></a>
+		</div>
+		<div class="col-md-4 img_project">
+			<a href="#adv_video"><img src="img/billboard.png">
+			<p>Рекламные ролики</p></a>
+		</div>
+		</div>
 	</div>
-	<div class="footer">
+
+	<div class="content">
+		<div class="container">
+		<div id="cel_video" class="cel_video">
+			<h3>Видеопоздравления</h3>
+		</div>
+		<div id="kor_video" class="kor_video">
+			<h3>Корпоративные фильмы</h3>
+		</div>
+		<div id="adv_video" class="adv_video">
+			<h3>Рекламные ролики</h3>
+		</div>
+		</div>
+	</div>
+
+	<div class="order_info">
+		<p>Для заказа услуг напишите нам на почту: ms-region@mail.ru или</br> позвоните по телефону : +79114231612
+		</p>
+	</div>
+
+	<div id="footer" class="footer">
 		<div class="form_send">
 			<div class="col-md-4">
 			<h4>Напишите нам</h4>
@@ -96,7 +117,9 @@
 					<p>(с)MS-Region.ru - видеостудия без границ!</p>
 				</div>
 			</div>
+
 </div>
 </div>
+<a href="#" class="scrollup">Наверх</a>
 </body>
 </html>
