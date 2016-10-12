@@ -39,7 +39,9 @@ ol, ul {
 	box-sizing: border-box;
 }
 
-a, a:hover {text-decoration: none;}
+a, a:hover {
+	text-decoration: none;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -409,9 +411,7 @@ text-indent:-9999px;
 background: url(../img/up-arrow.png) no-repeat;
 }
 
-.navigation a {
-	color: #4CAF50;
-}
+
 
 .partners {
 	border-top: 1px solid lightgray;
@@ -433,4 +433,12 @@ background: url(../img/up-arrow.png) no-repeat;
 
 .owl-carousel-partners .item{
  margin: 3px;
+}
+
+
+.blog_footer a, .blog_footer a:hover,
+.navigation a, .navigation a:hover,
+.text>a,.text>a:hover{
+	color: #4CAF50;
+	text-decoration: none;
 }

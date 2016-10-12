@@ -332,11 +332,9 @@ h5.title a:hover {text-decoration: underline;}
 	min-height: 650px;
 	height: auto;
 	padding-top: 100px;
-}
-
-.about_us_gen {
 	font-size: 16px;
 }
+
 .contacts_map{
 	text-align: center;
 }
@@ -592,3 +590,37 @@ background: url(../img/up-arrow.png) no-repeat;
 	border-top: 1px solid lightgray;
 	min-height: 510px;	
 }
+
+.navigation a, .navigation a:hover{
+	color: #4CAF50;
+	text-decoration: none;
+}
+.about_us_gen a,.about_us_gen a:hover {
+	color: #4CAF50;
+	text-decoration: none;
+
+}
+
+.article_content a, .article_content a:hover{
+	color: #4CAF50;
+	text-decoration: none;
+}
+
+/*Для страницы статьи блога*/
+
+.img_blog_content{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.blog_one_content {
+	min-height: 650px;
+	height: auto;
+	padding-top: 100px;
+	font-size: 16px;
+	background: #EEE9E9;
+}
+
+
+/**************************/
