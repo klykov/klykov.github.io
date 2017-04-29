@@ -1,189 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Порадуйте себя и своих детишек!">
-    <meta name="author" content="klykov">
-    <link rel="icon" href="assets/img/favicon.ico">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
 
-    <title>Закажи Деда Мороза и Снегурочку на дом!</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/custom-animations.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
   </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h3>Прогнозы на спорт</h3>
+        </div>
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+          <a href="#overview" class="mdl-layout__tab is-active">Прогнозы на сегодня</a>
+          <a href="#features" class="mdl-layout__tab">Прогнозы на завтра</a>
+          <a href="#statistic" class="mdl-layout__tab">Статистика прогнозов</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
+        
+        <!--ДЛЯ ОДИНОЧНЫХ СТАВОК-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Прогноз</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
+        
 
-  <body>
-	  
-	    <! --  ********** HEADER SECTION ********** -->
-		<div id="h">
-			<div class="container">
-				<div class="row centered">
-					<h2>Пригласи сказку в дом</h2>
-					<h1>Услуги Деда Мороза и Снегурочки</h1>
-				</div><! --/row -->
-			</div><!-- /container -->
-		</div><! --/header-->
+          <!--ДЛЯ ЭКСПРЕССОВ-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Экспресс</h4>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Lorem ipsum dolor sit amet</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Lorem ipsum dolor sit amet</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                </div>
+                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
+                  <div class="section__circle-container__circle mdl-color--primary"></div>
+                </div>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <h5>Lorem ipsum dolor sit amet</h5>
+                  Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Duis nulla tempor do aute et eiusmod velit exercitation nostrud quis <a href="#">proident minim</a>.
+                </div>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
 
-	    <! --  ********** WHITE SECTION ********** -->
-		<div id="w">
-			<div class="container">
-				<div class="row centered">
-					<div class="col-md-8 col-md-offset-2">
-						<h4>ВЫЗОВ ДЕДА МОРОЗА И СНЕГУРОЧКИ В ГОРОДЕ 
-						<b style="color:#000">КЕМЬ</b> <i class="glyphicon glyphicon-tree-conifer"></i></h4>
-						<p>Работаем с 28 декабря по 31 декабря (до 23:00) и с 1 января по 10 января.</p>
-						<br/>
-					</div><! --col-md-8 -->
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/w -->
+         
+        </div>
 
-	    <! --  ********** GREEN SECTION ********** -->
-		<div id="g">
-			<div class="container">
-				<div class="row mt">
-					<div class="col-md-6 centered">
-						<img src="assets/img/ded.png" class="img-responsive aligncenter"  alt="" data-effect="slide-left">
-					</div><! --/col-md-6 -->
-					
-					<div class="col-md-4">
-						<h1 data-effect="slide-right">1</h1>
-						<p>Дед Мороз придёт поздравить вас и ваших детей, принеся в дом атмосферу праздника и неимоверную радость для детей. 
-						В программу входид: пара стишков, выслушать детишек, подарить подарки. Время сеанса 20 мин.</p>
-						<p style="font-size: 25px;border: 1px solid white; padding: 10px;">
-							Цена: 1000 рублей.
-						</p>
-					</div><! --/col-md-4 -->
-					
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/G -->
 
-	    <! --  ********** CTA SECTION ********** -->		
-		<div id="cta">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 centered">
-						<p style="font-size: 24px;">Закажи Деда Мороза на дом сейчас :<b>+7(911)4231612</b></p>
-					</div>
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/CTA -->
-		
-	    <! --  ********** RED SECTION ********** -->
-		<div id="r">
-			<div class="container">
-				<div class="row mt">
-					<div class="col-md-4 col-md-offset-2">
-						<h1 data-effect="slide-left">2</h1>
-						<p>Дед Мороз придёт поздравить ваших детей вместе со своей верной помошницей снегурочкой.
-						В программу входид: пара стишков, выслушать детишек, подарить подарки. Время сеанса 20 мин.
-						</p>
-						<p style="font-size: 25px;border: 1px solid white; padding: 10px;">
-							Цена: 1500 рублей.
-						</p>
-					</div><! --/col-md-4 -->
-					<div class="col-md-6 centered">
-						<img src="assets/img/dediSneg.png" class="img-responsive aligncenter"  alt="" data-effect="slide-right">
-					</div><! --/col-md-6 -->
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/R -->
+        <div class="mdl-layout__tab-panel" id="features">
+           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Прогноз</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
+           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Прогноз</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel" id="statistic">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Статистика прогнозов</h4>
+              <ul class="toc">
+                <h4>Статистика</h4>
+                <a href="#lorem1">Ставок прошло</a>
+                <a href="#lorem2">Ставок не прошло</a>
+                <a href="#lorem3">Возврат</a>
+              </ul>
+            </div>
+          </section>
+        </div>
+        
 
-	    <! --  ********** CTA SECTION ********** -->		
-		<div id="cta">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 centered">
-						<p style="font-size: 24px;">Закажи Деда Мороза и Снегурочку на дом сейчас :<b>+7(911)4231612</b></p>
-					</div>
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/CTA -->
+        <footer class="mdl-mega-footer"> 
+        </footer>
 
-	    <! --  ********** BLUE SECTION ********** -->
-		<div id="b">
-			<div class="container">
-				<div class="row mt">
-					<div class="col-md-6 centered">
-						<img src="assets/img/ded2.png" class="img-responsive aligncenter"  alt="" data-effect="slide-left">
-					</div><! --/col-md-6 -->
-					
-					<div class="col-md-4">
-						<h1 data-effect="slide-right">3</h1>
-						<p>Индивидуальный поход. Провести сеанс можно индивидуальным образом с учётом ваших пожеланий. Либо же стандартная программа но с более длительным сеансом от 30 мин.</p>
-						<p style="font-size: 25px;border: 1px solid white; padding: 10px;">
-							Цена: от 2000 рублей.
-						</p>
-					</div><! --/col-md-4 -->
-					
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/B -->
 
-	    <! --  ********** CTA SECTION ********** -->		
-		<div id="cta">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 centered">
-						<p style="font-size: 24px;">Ждём Ваших Заказов :<b>+7(911)4231612</b></p>
-					</div>
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/CTA -->
-		
-	    <! --  ********** FOOTER SECTION ********** -->		
-		<div id="f">
-			<div class="container">
-				<div class="row centered mtb">
-					<h3>Внимание 31 декабря и 1 Января действуем по повышенному тарифу, от 3000 р.</h3>
-					<div class="col-md-6 col-md-offset-3 mt" data-effect="slide-bottom">
-					Всех с наступающим Новым Годом!<i class="glyphicon glyphicon-tree-conifer"></i>
-					</div>
-				</div><! --/row -->
-			</div><! --/container -->
-		</div><! --/F -->
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-	  <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter40717529 = new Ya.Metrika({
-                    id:40717529,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/40717529" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/retina-1.1.0.js"></script>
-    <script src="assets/js/jquery.unveilEffects.js"></script>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
