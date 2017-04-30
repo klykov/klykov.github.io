@@ -75,32 +75,29 @@
           <a href="#overview" class="mdl-layout__tab is-active">Прогнозы на сегодня</a>
           <a href="#features" class="mdl-layout__tab">Прогнозы на завтра</a>
           <a href="#statistic" class="mdl-layout__tab">Статистика прогнозов</a>
-        <a href="#users" class="mdl-layout__tab">Прогнозы пользователей</a>
+          <a href="#users" class="mdl-layout__tab">Прогнозы пользователей</a>
         </div>
       </header>
+
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview"  style="min-height:607px;">
+        <div class="mdl-layout__tab-panel is-active" id="overview">
         
         <!--ДЛЯ ОДИНОЧНЫХ СТАВОК-->
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Прогноз</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-				<!-- Put this script tag to the <head> of your page -->
-				<script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
-
-				<script type="text/javascript">
-				  VK.init({apiId: 6005145, onlyWidgets: true});
-				</script>
-
-				<!-- Put this div tag to the place, where the Like block will be -->
-				<div id="vk_like"></div>
-				<script type="text/javascript">
-				VK.Widgets.Like("vk_like", {type: "mini"});
-				</script>
+                <h4>Томь - Зенит</h4>
+                <span>Футбол, РФПЛ</span>
+             	<div class="mdl-cell--12-col">
+             			<img src="https://storage.mds.yandex.net/get-sport/12370/da29df3a5abd486f7c794b58c48ebd0e.jpg" width="120" height="120" style="margin-right: 70px;">
+             			<i class="material-icons">remove</i>	
+             			<img src="https://storage.mds.yandex.net/get-sport/69603/d3fd8130b8db231cb086f0ffe2b69b21.png" width="120" height="120" style="margin-left: 70px;">	
+             			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #228B22;margin-left: 150px;">
+						  Получить прогноз
+						</button>
+             	</div>
+             	<br>
+             	<span>Дата матча: 01.05.17 13:00</span>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
@@ -113,7 +110,72 @@
         
 
           <!--ДЛЯ ЭКСПРЕССОВ-->
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" >
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+                <h4 class="mdl-cell mdl-cell--12-col">Экспресс</h4>
+                 <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                <span>ЦСКА -Спартак</span>
+                  <div class="mdl-cell--12-col">
+             			<img src="https://storage.mds.yandex.net/get-sport/12370/ff694f0acd0a59ec3949148c4d63b8d9.png" width="50" height="50" style="margin-right: 70px;">
+             			<i class="material-icons">remove</i>	
+             			<img src="https://storage.mds.yandex.net/get-sport/10493/252d4aca58d6054ca1efa52df043a6c3.png" width="50" height="50" style="margin-left: 70px;">	
+             			<span style="margin-left: 100px;">Дата матча: 02.05.17 14:00</span>
+             	</div>
+                </div>
+                <span>Динамо - Черноморец</span>
+                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+                  <div class="mdl-cell--12-col">
+             			<img src="https://storage.mds.yandex.net/get-sport/11917/1fd8134e225308d2d1f1d171022bc8e6.png" width="50" height="50" style="margin-right: 70px;">
+             			<i class="material-icons">remove</i>	
+             			<img src="https://storage.mds.yandex.net/get-sport/12370/15a9fc17f8d38f97c3e51c7f72099c1e.png" width="50" height="50" style="margin-left: 70px;">
+             			<span style="margin-left: 100px;">Дата матча: 03.05.17 17:00</span>	
+             			
+             	</div>
+                </div>
+          
+              
+                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #228B22;margin-top: 10px;">
+						  Получить прогноз
+						</button>
+            </div>
+
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn2">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
+
+         
+        </div>
+
+
+        <div class="mdl-layout__tab-panel" id="features">
+        
+        <!--ДЛЯ ОДИНОЧНЫХ СТАВОК-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Прогноз</h4>
+                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div>
+            </div>
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+              <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+              <li class="mdl-menu__item">Оценить</li>
+            </ul>
+          </section>
+        
+
+          <!--ДЛЯ ЭКСПРЕССОВ-->
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
                 <h4 class="mdl-cell mdl-cell--12-col">Экспресс</h4>
@@ -140,18 +202,7 @@
                 </div>
               </div>
               <div class="mdl-card__actions">
-                <!-- Put this script tag to the <head> of your page -->
-			<script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
-
-			<script type="text/javascript">
-			  VK.init({apiId: 6005145, onlyWidgets: true});
-			</script>
-
-			<!-- Put this div tag to the place, where the Like block will be -->
-			<div id="vk_like1"></div>
-			<script type="text/javascript">
-			VK.Widgets.Like("vk_like1", {type: "mini"});
-			</script>
+                <a href="#" class="mdl-button">Read our features</a>
               </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn2">
@@ -166,78 +217,45 @@
         </div>
 
 
-        <div class="mdl-layout__tab-panel" id="features"  style="min-height:607px;">
-           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Прогноз</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-                <!-- Put this script tag to the <head> of your page -->
-		<script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
 
-		<script type="text/javascript">
-		  VK.init({apiId: 6005145, onlyWidgets: true});
-		</script>
-
-		<!-- Put this div tag to the place, where the Like block will be -->
-		<div id="vk_like2"></div>
-		<script type="text/javascript">
-		VK.Widgets.Like("vk_like2", {type: "mini"});
-		</script>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Оценить</li>
-            </ul>
-          </section>
-           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Прогноз</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse. Pariatur occaecat nisi laboris tempor laboris eiusmod qui id Lorem esse commodo in. Exercitation aute dolore deserunt culpa consequat elit labore incididunt elit anim.
-              </div>
-              <div class="mdl-card__actions">
-                <!-- Put this script tag to the <head> of your page -->
-			<script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
-
-			<script type="text/javascript">
-			  VK.init({apiId: 6005145, onlyWidgets: true});
-			</script>
-
-			<!-- Put this div tag to the place, where the Like block will be -->
-			<div id="vk_like4"></div>
-			<script type="text/javascript">
-			VK.Widgets.Like("vk_like4", {type: "mini"});
-			</script>
-              </div>
-            </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
-              <i class="material-icons">more_vert</i>
-            </button>
-            <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
-              <li class="mdl-menu__item">Оценить</li>
-            </ul>
-          </section>
-        </div>
-        <div class="mdl-layout__tab-panel" id="statistic"  style="min-height:507px;">
-          <section class="section--center mdl-grid mdl-grid--no-spacing">
+        <div class="mdl-layout__tab-panel" id="statistic">
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Статистика прогнозов</h4>
-              <ul class="toc">
-                <h4>Статистика</h4>
-                <a href="#lorem1">Ставок прошло</a>
-                <a href="#lorem2">Ставок не прошло</a>
-                <a href="#lorem3">Возврат</a>
-              </ul>
-            </div>
+              <table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp mdl-cell--12-col">
+				  <thead>
+				    <tr>
+				      <th class="mdl-data-table__cell--non-numeric">Вид спорта</th>
+				      <th>Верных прогнозов</th>
+				      <th>Проигранных прогнозов</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">
+				      Футбол
+				      </td>
+				      <td>12</td>
+				      <td>5</td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">
+				      Хоккей
+				      </td>
+				      <td>50</td>
+				      <td>3</td>
+				    </tr>
+				    <tr>
+				      <td class="mdl-data-table__cell--non-numeric">
+				      Баскетбол</td>
+				      <td>10</td>
+				      <td>2</td>
+				    </tr>
+				  </tbody>
+				</table>
+       
           </section>
         </div>
-        <div class="mdl-layout__tab-panel" id="users" style="min-height:507px;">
+        <div class="mdl-layout__tab-panel" id="users">
            <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <!-- Put this script tag to the <head> of your page -->
 			<script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
@@ -251,13 +269,7 @@
 			<script type="text/javascript">
 			VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
 			</script>
-		   <button onclick="function order() { 
-  var params = { 
-    type: 'item', 
-    item: 'item_25new' 
-  }; 
-  VK.callMethod('showOrderBox', params); 
-} ">dsadsa</button>
+			
           </section>
         </div>
         <footer class="mdl-mega-footer"> 
