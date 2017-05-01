@@ -38,6 +38,10 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -72,10 +76,10 @@
         <div class="mdl-layout--large-screen-only mdl-layout__header-row" >
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color: #228B22;">
-          <a href="#overview" class="mdl-layout__tab is-active">Прогнозы на сегодня</a>
-          <a href="#features" class="mdl-layout__tab">Прогнозы на завтра</a>
+          <a href="#overview" class="mdl-layout__tab is-active">Прогнозы</a>
+          <a href="#features" class="mdl-layout__tab">Последние прогнозы</a>
           <a href="#statistic" class="mdl-layout__tab">Статистика прогнозов</a>
-          <a href="#users" class="mdl-layout__tab">Прогнозы пользователей</a>
+          <a href="#users" class="mdl-layout__tab">Отзывы пользователей</a>
         </div>
       </header>
 
@@ -86,23 +90,39 @@
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
               <div class="mdl-card__supporting-text">
-                <h4>Томь - Зенит</h4>
-                <span>Футбол, РФПЛ</span>
-             	<div class="mdl-cell--12-col">
-             			<img src="https://storage.mds.yandex.net/get-sport/12370/da29df3a5abd486f7c794b58c48ebd0e.jpg" width="120" height="120" style="margin-right: 70px;">
-             			<i class="material-icons">remove</i>	
-             			<img src="https://storage.mds.yandex.net/get-sport/69603/d3fd8130b8db231cb086f0ffe2b69b21.png" width="120" height="120" style="margin-left: 70px;">	
-             			<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #228B22;margin-left: 150px;">
+           		<div class="row">
+					  <div class="col-md-7" >
+					  <div class="col-md-6" style=";text-align: left;">	
+					  <img src="http://www.andromedafree.it/blog/wp-content/uploads/2013/07/serie-a.png" width="120" height="150"></div>
+					  <div class="col-md-6" style="padding: 23px;">
+					  	<p style="font-size: 22px;"><b>Italia, Seria A</b></p>
+					
+					  <p>Футбол</p>
+					  <p style="font-size: 16px;"><b>Проход:</b><span style="color: #228B22;"> высокий</span></p>
+					  <br>	
+					  </div>
+					  </div>
+					  <div class="col-md-5" style="text-align: center;margin-top: 30px;">
+					  <p style="font-size: 22px;"><b>Дата:</b> 30.05.17</p>
+					  <br>
+					  <p style="font-size: 30px;"><b>Коэф.:</b> 3.19</p>
+					  <br>	
+					  </div>
+					  <div class="col-md-6" style="margin-top: 10px; text-align: right;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					  quis nostrud exercitation ullamco laboris</div>
+					  <div class="col-md-6" style="text-align: right;">
+                 		<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="background-color: #228B22;margin-top: 30px;">
 						  Получить прогноз
 						</button>
-             	</div>
-             	<br>
-             	<span>Дата матча: 01.05.17 13:00</span>
-              </div>
+					  </div>
+              	</div>
+            </div>
             </div>
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
               <i class="material-icons">more_vert</i>
             </button>
+
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
               <li class="mdl-menu__item">Оценить</li>
             </ul>
